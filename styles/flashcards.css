@@ -1,12 +1,12 @@
 /* Colors */
 :root {
-    --bg-page : #303C6C;
+    --bg-page: #303C6C;
     --header-color: #303C6C;
     --heading-color: #FBEA86;
-    --text-color: #303C6C; 
-    --bg-main : #FBEA86;
+    --text-color: #303C6C;
+    --bg-main: #FBEA86;
     --bg-flashcard: #FBEA86;
-    --bdr-card : #303C6C;
+    --bdr-card: #303C6C;
 }
 
 @font-face {
@@ -37,6 +37,7 @@ body {
     align-content: center;
     padding: 10px 0;
 }
+
 /* 
 .fc-main-block {
 } */
@@ -56,15 +57,20 @@ body {
     margin-bottom: 10px;
 }
 
-.title-text, .title-detail, .description-text, .description-detail {
-    color: var( --text-color);
+.title-text,
+.title-detail,
+.description-text,
+.description-detail {
+    color: var(--text-color);
 }
 
-.title-text, .title-detail {
+.title-text,
+.title-detail {
     font-family: "Roboto-heading";
 }
 
-.description-text, .description-detail {
+.description-text,
+.description-detail {
     font-family: "Roboto-description";
 }
 
@@ -76,9 +82,26 @@ body {
 .fc-fab {
     position: fixed;
     bottom: 15px;
-    right: 10px;       
+    right: 10px;
 }
 
 .fc-mdc-fab__ripple {
     background: var(--bg-flashcard);
+}
+
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #FBEA86 radial-gradient(circle, transparent 1%, #FBEA86 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #303C6C;
+    background-size: 100%;
+    transition: background 0s;
 }
