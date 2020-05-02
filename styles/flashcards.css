@@ -101,7 +101,7 @@ body {
 }
 
 .ripple:active {
-    background-color: #303C6C;
+    background-color: #FFFCCC;
     background-size: 100%;
     transition: background 0s;
 }
