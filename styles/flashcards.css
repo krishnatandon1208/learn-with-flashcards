@@ -35,9 +35,19 @@ body {
 }
 
 .fc-main {
+    margin: 20px;
+}
+
+.fc-main-block {
     background: var(--bg-main);
     height: 100vh;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
-    margin: 5px 20px;
+}
+
+@media screen and (max-width: 776px) {
+    /* .fc-main {
+        margin: 10px;
+        width: 95%;
+    } */
 }
