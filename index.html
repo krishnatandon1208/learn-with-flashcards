@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn with Flashcards</title>
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/flashcards.css">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
@@ -20,7 +21,28 @@
         </div>
     </header>
     <main class="fc-main">
-        <div class="fc-main-block"></div>
+        <div class="fc-main-block">
+            <!-- Default Card Tile. This will be hidden and will be used for cloning -->
+            <div class="flash-card" id="flashcard_">
+                <div class="flash-card-item">
+                    <h4 class="flash-card-item-title mt-0">
+                        <span class="title-text">Title - </span>
+                        <span class="title-detail"></span>
+                    </h4>
+                    <div class="flash-card-item-desc-block">
+                        <span class="description-text">Description - </span>
+                        <span class="description-detail"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fc-fab">
+            <button class="mdc-fab" aria-label="Add">
+                <div class="mdc-fab__ripple fc-mdc-fab__ripple"></div>
+                <!-- <span class="mdc-fab__icon material-icons">favorite</span> -->
+                <img src="images/add-item.svg" class="z-1" alt="Add item">
+            </button>
+        </div>
     </main>
 </body>
 

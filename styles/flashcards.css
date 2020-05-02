@@ -2,8 +2,11 @@
 :root {
     --bg-page : #303C6C;
     --header-color: #303C6C;
-    --text-color: #FBEA86;
+    --heading-color: #FBEA86;
+    --text-color: #303C6C; 
     --bg-main : #FBEA86;
+    --bg-flashcard: #FBEA86;
+    --bdr-card : #303C6C;
 }
 
 @font-face {
@@ -26,28 +29,51 @@ body {
 .fc-top-app-bar {
     position: relative;
     background-color: var(--header-color);
-    color: var(--text-color);
+    color: var(--heading-color);
     text-align: center;
     font-family: "Roboto-heading";
     font-size: 26px;
     justify-content: center;
     align-content: center;
+    padding: 10px 0;
 }
-
-.fc-main {
-    margin: 20px;
-}
-
+/* 
 .fc-main-block {
-    background: var(--bg-main);
-    height: 100vh;
-    width: 100%;
-    border-radius: 10px;
+} */
+
+.flash-card {
+    padding: 5px 20px;
 }
 
-@media screen and (max-width: 776px) {
-    /* .fc-main {
-        margin: 10px;
-        width: 95%;
-    } */
+.flash-card-item {
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    background: var(--bg-flashcard);
+}
+
+.flash-card-item-title {
+    margin-bottom: 10px;
+}
+
+.title-text, .title-detail, .description-text, .description-detail {
+    color: var( --text-color);
+}
+
+.title-text, .title-detail {
+    font-family: "Roboto-heading";
+}
+
+.description-text, .description-detail {
+    font-family: "Roboto-description";
+}
+
+.fc-fab {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;       
+}
+
+.fc-mdc-fab__ripple {
+    background: var(--bg-flashcard);
 }
