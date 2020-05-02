@@ -68,6 +68,11 @@ body {
     font-family: "Roboto-description";
 }
 
+.delete-flash-card img {
+    height: 20px;
+    width: 20px;
+}
+
 .fc-fab {
     position: fixed;
     bottom: 15px;

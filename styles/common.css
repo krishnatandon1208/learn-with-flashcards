@@ -254,6 +254,19 @@
 	align-items: center;
 }
 
+/* display */
+.d-flex {
+	display: flex;
+}
+
+.d-none {
+	display: none;
+}
+
+.d-block {
+	display: block;
+}
+
 /*justify content - jc*/
 .jc-flex-end {
 	justify-content : flex-end;
