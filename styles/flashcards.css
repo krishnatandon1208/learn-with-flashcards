@@ -48,8 +48,8 @@ body {
 
 .flash-card-item {
     border-radius: 10px;
-    margin: 20px auto;
-    padding: 10px;
+    margin: 0px auto 20px;
+    padding: 20px;
     background: var(--bg-flashcard);
 }
 
