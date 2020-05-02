@@ -1,0 +1,43 @@
+/* Colors */
+:root {
+    --bg-page : #303C6C;
+    --header-color: #303C6C;
+    --text-color: #FBEA86;
+    --bg-main : #FBEA86;
+}
+
+@font-face {
+    font-family: "Roboto-heading";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-description";
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-page);
+}
+
+.fc-top-app-bar {
+    position: relative;
+    background-color: var(--header-color);
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Roboto-heading";
+    font-size: 26px;
+    justify-content: center;
+    align-content: center;
+}
+
+.fc-main {
+    background: var(--bg-main);
+    height: 100vh;
+    width: 90%;
+    border-radius: 10px;
+    margin: 5px 20px;
+}
