@@ -44,79 +44,43 @@
                             sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
                     </div>
                 </div>
-
-                <div class="flash-card-item">
-                    <div class="d-flex jc-space-bt">
-                        <div class="flash-card-title">
-                            <h3 class="flash-card-item-title mt-0">
-                                <span class="title-text">What is Lorem Ipsum dolor sit amet and why used? </span>
-                            </h3>
-                        </div>
-                        <div class="delete-flash-card">
-                            <img src="images/delete.svg" alt="Delete Flash Card" class="ripple">
-                        </div>
-                    </div>
-                    <div class="flash-card-item-desc-block">
-                        <span class="description-detail">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                            sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
-                    </div>
-                </div>
-
-                <div class="flash-card-item">
-                    <div class="d-flex jc-space-bt">
-                        <div class="flash-card-title">
-                            <h3 class="flash-card-item-title mt-0">
-                                <span class="title-text">What is Lorem Ipsum dolor sit amet and why used? </span>
-                            </h3>
-                        </div>
-                        <div class="delete-flash-card">
-                            <img src="images/delete.svg" alt="Delete Flash Card" class="ripple">
-                        </div>
-                    </div>
-                    <div class="flash-card-item-desc-block">
-                        <span class="description-detail">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                            sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
-                    </div>
-                </div>
-
-                <div class="flash-card-item">
-                    <div class="d-flex jc-space-bt">
-                        <div class="flash-card-title">
-                            <h3 class="flash-card-item-title mt-0">
-                                <span class="title-text">What is Lorem Ipsum dolor sit amet and why used? </span>
-                            </h3>
-                        </div>
-                        <div class="delete-flash-card">
-                            <img src="images/delete.svg" alt="Delete Flash Card" class="ripple">
-                        </div>
-                    </div>
-                    <div class="flash-card-item-desc-block">
-                        <span class="description-detail">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                            sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
-                    </div>
-                </div>
             </div>
         </div>
+
+        <!-- FlashCard content generator -->
+        <div class="create-flashcard-block" id="createNewFlashcard">
+            <form action="">
+                <div class="text-center flashcard-form-heading">
+                    <h3 class="mt-0 f-20">Create New Flashcard</h3>
+                    <!-- <img src="images/delete.svg" height="20" width="15" alt="Reset"> -->
+                </div>
+                <div class="flashcard-form-title d-flex jc-space-around">
+                    <label for="createFlashcardTitle" class="width-25">Title</label>
+                    <input type="text" name="Create Flashcard Title" class="width-75" id="createFlashcardTitle"> 
+                </div>
+                <div class="flashcard-form-description d-flex jc-space-around">
+                    <label for="createFlashcardDescription" class="width-25">Description</label>
+                    <input type="text" name="Create Flashcard Description" class="width-75" id="createFlashcardDescription">
+                </div>
+                <div class="flashcard-form-button d-flex jc-space-evenly">
+                    <button type="submit" class="flashcard-form-cnfrm-btn">Confirm</button>
+                    <button type="reset" class="flashcard-form-reset-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+
         <div class="fc-fab">
-            <button class="mdc-fab" aria-label="Add">
+            <button class="mdc-fab" aria-label="Add" onclick="Flashcards.generateNewFlashcard()">
                 <div class="mdc-fab__ripple fc-mdc-fab__ripple"></div>
                 <!-- <span class="mdc-fab__icon material-icons">favorite</span> -->
                 <img src="images/add-item.svg" class="z-1" alt="Add item">
             </button>
         </div>
     </main>
+    <!-- <footer></footer> -->
+
+    <!-- Scripts -->
+    <script src="scripts/flashcards.js"></script>
 </body>
 
 </html>

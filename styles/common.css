@@ -173,12 +173,48 @@
 }
 
 /*Height and width*/
+.width-10 {
+	width: 10%;
+}
+
+.width-20 {
+	width: 20%;
+}
+
+.width-25 {
+	width: 25%;
+}
+
+.width-30 {
+	width: 30%;
+}
+
+.width-40 {
+	width: 40%;
+}
+
 .width-50 {
 	width: 50%;
 }
 
+.width-60 {
+	width: 60%;
+}
+
+.width-70 {
+	width: 70%;
+}
+
 .width-75 {
 	width : 75%;
+}
+
+.width-80 {
+	width: 80%;
+}
+
+.width-90 {
+	width: 90%;
 }
 
 .width-100 {
@@ -205,6 +241,30 @@
 
 .f-18 {
 	font-size: 18px;	
+}
+
+.f-20 {
+	font-size: 20px;
+}
+
+.f-22 {
+	font-size: 22px;
+}
+
+.f-24 {
+	font-size: 24px;
+}
+
+.f-26 {
+	font-size: 26px;
+}
+
+.f-28 {
+	font-size: 28px;
+}
+
+.f-30 {
+	font-size: 30px;
 }
 
 
@@ -276,8 +336,25 @@
 	justify-content: space-between;
 }
 
+.jc-space-evenly {
+	justify-content: space-evenly;
+}
+
 .jc-center {
 	justify-content: center;
+}
+
+/* Alignment */
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
 }
 
 /*Top, right, bottom, left*/
@@ -292,38 +369,6 @@
 	align-items: center;
 }
 
-/* Placeholder */
-
-::-webkit-input-placeholder  {
-	font-size: 14px;
-	line-height: 16px;
-	color: #707070;
-}
-::-moz-placeholder { /* Firefox 19+ */
-	font-size: 14px;
-	line-height: 16px;
-	color: #707070;
-}
-:-ms-input-placeholder { /* IE 10+ */
-	font-size: 14px;
-	line-height: 16px;
-	color: #707070;
-}
-:-moz-placeholder { /* Firefox 18- */
-	font-size: 14px;
-	line-height: 16px;
-	color: #707070;
-}
-
-/* Spacing */
-.width-224 {
-	width: 224px;
-}
-
-.content-left {
-	left: 14rem;
-}
-
 /* Buttons */
 .btn-dark-blue {
 	background: #005578;
@@ -333,43 +378,6 @@
 .btn-dark-blue:hover{
 	color: #FFFFFF !important;
 } 
-
-/* Static fields - Dropdown, inputs, span */
-.static-case {
-	height: 43px;
-}
-
-.static-case .static-text  {
-	top: 2px;
-	color: #788791;
-	z-index: 1;
-    line-height: 1;
-}
-
-.static-case .static-text-value {
-	top: 15px;
-	font-size: 12px;
-}
-
-.static-dropdown .nice-select {
-	width: 100%;
-	height: 43px;
-	border-radius: 0;
-	padding-left: 10px;
-}
-
-.static-dropdown .nice-select .list {
-	width: 100%;
-	max-height: 140px;
-    overflow: auto;
-}
-
-.input-cal-img {
-	background: url("../../Images/calendar-dark.svg");
-	background-repeat: no-repeat;
-	background-position: 98% center;
-}
-
 /* text-transform */
 .text-uppercase {
 	text-transform: uppercase;
@@ -383,10 +391,3 @@
 .va-initial {
 	vertical-align: initial;
 }
-
-@media screen and (min-width: 1367px) { 
-	.content-left {
-		left: 20rem;
-	}
-}
-
